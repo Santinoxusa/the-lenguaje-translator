@@ -6,10 +6,24 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>    
 <body>
-    <button id="reverse-bt">Reverse</button>
-    <input type="text" id="input">
-    <input type="text" id ="output">
+    <div id="container"> 
 
+        <button id="reverse-bt">Reverse</button>
+
+        <div id="text-container">
+            <div id="js">
+                <p id="js-txt">JS</p>
+                <textarea id="input" placeholder="input"></textarea>
+            </div>
+            <div id="py">
+                <p id="py-txt">PY</p>
+                <textarea id ="output" placeholder="output"></textarea>
+            </div>
+        </div>
+
+        <button id="process-bt">Process</button>
+
+    </div>
 <script type="text/javascript" src="code.js"></script>
 </body>
 </html>

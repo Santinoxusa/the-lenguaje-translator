@@ -1,0 +1,84 @@
+body {
+    background-color: #222;
+}
+
+textarea {
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    padding: 10px;
+    white-space: pre;  /* Permite espacios en blanco como un editor */
+    caret-color: #0f0; /* Cursor verde como en terminales */
+}
+
+button {
+    background: none;
+    border: none;
+    color: #fff;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #fff1;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container > button {
+    width: 15%;
+    aspect-ratio: 1.618 / 1;
+
+}
+
+#js-txt {
+    position: absolute;
+    color: #ff0;
+    opacity: .2;
+    margin: auto;
+}
+
+#py-txt {
+    position: absolute;
+    color: #66f;
+    opacity: .2;
+    margin: auto;
+}
+
+#text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    width: 100%;
+
+    aspect-ratio: 4 / 1;
+}
+
+textarea {
+    flex-basis: 47%;
+    margin: 2%; 
+    aspect-ratio: 1.618 / 1;
+    outline: none; /* Evita el borde azul al hacer clic */
+}
+
+/* Placeholder estilizado */
+#text-container > textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Placeholder estilizado */
+#text-container > textarea:focus {
+    background-color: #555;
+}
+
+#output {
+    user-select: none;
+}
